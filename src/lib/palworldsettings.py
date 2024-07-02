@@ -110,6 +110,7 @@ class SettingStructs:
     DropItemMaxNum = ConfigOption("DropItemMaxNum", StructTypes.Int, 3000)
     DropItemMaxNum_UNKO = ConfigOption("DropItemMaxNum_UNKO", StructTypes.Int, 100)
     BaseCampMaxNum = ConfigOption("BaseCampMaxNum", StructTypes.Int, 128)
+    BaseCampMaxNumInGuild = ConfigOption("BaseCampMaxNumInGuild", StructTypes.Int, 4)
     BaseCampWorkerMaxNum = ConfigOption("BaseCampWorkerMaxNum", StructTypes.Int, 15)
     DropItemAliveMaxHours = ConfigOption("DropItemAliveMaxHours", StructTypes.Float, 1.000000)
     bAutoResetGuildNoOnlinePlayers = ConfigOption("bAutoResetGuildNoOnlinePlayers", StructTypes.Bool, False)
@@ -138,7 +139,10 @@ class SettingStructs:
     Region = ConfigOption("Region", StructTypes.Str, "")
     bUseAuth = ConfigOption("bUseAuth", StructTypes.Bool, True)
     BanListURL = ConfigOption("BanListURL", StructTypes.Str, "https://api.palworldgame.com/api/banlist.txt")
+    RESTAPIEnabled = ConfigOption("RESTAPIEnabled", StructTypes.Bool, False)
+    RESTAPIPort = ConfigOption("RESTAPIPort", StructTypes.Int, 8212)
     bShowPlayerList = ConfigOption("bShowPlayerList", StructTypes.Bool, False)
+    bIsUseBackupSaveData = ConfigOption("bIsUseBackupSaveData", StructTypes.Bool, True)
 
     @staticmethod
     def get_config_option(option_name: str) -> ConfigOption:
